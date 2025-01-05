@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>General Court of Audit - Internal Portal</title>
+  <link id="style-library" rel="stylesheet" href="css/gca-ltr.css">
+  <link rel="stylesheet" href="css/hugeicons-font.css">
+
+</head>
+
+<body class="body">
+
+  <!-- TopBar start -->
+  <div class="container-fluid topbar bg-light px-5 py-2 mb-0 border-bottom">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 ">
+          <div class="d-flex align-items-center gap-1">
+            <a id="printPageButton" type="button">
+              <i class="gca-stroke gca-printer">
+              </i>
+            </a>
+          </div>
+          <a class="d-none d-md-block ">
+            <i class="gca-stroke gca-calendar-03">
+            </i>
+            <span class="text-body-secondary">
+              Monday, 22 July 2024, 16 Muharram 1446
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end ">
+          <div class="text-end">
+            <div href="#" class="position-relative rounded-3 ">
+              <i class="gca-stroke gca-user"></i>
+              <span>Mohamed Abdulaziz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Navbar start -->
+  <header class="header px-5 py-2 mb-0 border-bottom">
+    <div class="fluid-container d-flex justify-content-between">
+      <div class="d-flex flex-wrap align-items-center justify-content-start">
+        <a href="/" class="d-flex align-items-center link-body-emphasis ">
+          <img src="img/master-page-icons/gca-logo.png" alt="logo" height="60">
+        </a>
+        <ul class="d-none d-xl-flex nav main-nav justify-content-center ms-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-home-05"></i>
+              <span id="menu-home">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="standards.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-license"></i>
+              <span id="menu-standards">Standards</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="training.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-teaching"></i>
+              <span id="menu-training">Training</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="sharing.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-share-08"></i>
+              <span id="menu-sharing">Sharing Files</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown-center">
+              <a class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 fw-semibold dropdown-toggle"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span id="menu-setting">Admin Setting</span>
+                <i class="gca-stroke gca-arrow-down-01"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    Site Content
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="gca-stroke gca-user-group"></i>
+                    Site Groups
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-notification d-flex flex-wrap align-items-center justify-content-start">
+        <!-- Search Start -->
+        <div class="d-none d-xl-flex text-end">
+          <div class="text-end">
+            <a href="#" class="nav-link position-relative text-decoration-none px-2 py-3 rounded-3" type="button"
+              id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+
+              <i class="gca-stroke gca-search-01"></i>
+              <span>Search</span>
+            </a>
+            <div class="dropdown-menu w-100 p-4" aria-labelledby="searchDropdown" style="transform: translateY(0);">
+              <div class="w-75 m-auto py-5">
+                <form action="/search" method="GET">
+                  <div class="mb-3 mt-5">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" name="query" placeholder="Search here..." required />
+
+                      </div>
+                      <div class="col-2">
+
+                        <button type="submit" class="btn btn-primary w-100">
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="text-primary py-2 fw-bold">suggested</h5>
+                  <div class="mb-5 d-flex flex-wrap gap-2">
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 1
+                    </a>
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 2
+                    </a>
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 3
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Notification Start -->
+        <div class="d-none d-xl-flex dropdown text-end">
+          <div class="dropdown text-end">
+            <a class=" btn-clean dropdown-toggle nav-link text-decoration-none rounded-3 ps-3 pe-5 py-3 "
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="gca-stroke gca-notification-02"></i>
+              <span class="position-absolute top-30 translate-middle badge rounded-pill bg-danger">
+                20
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+              <div class="px-3 py-1 d-flex align-items-center justify-content-start">
+                <h5 class="notiy-title mb-0">Notifications</h5>
+              </div>
+              <div class="notify-list">
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-end p-3">
+                  <button type="button" class="btn btn-clean .fs-7">
+                    <i class="gca-stroke gca-arrow-right-02"></i>
+                    View All
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Start -->
+        <div class="d-none d-xl-flex text-end">
+          <div class="text-end">
+            <a id="lang-toggle" href="#" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 ">
+              <i class="gca-stroke gca-translation"></i>
+              <span id="lang-label">العربية</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Offcanvas Toggle -->
+        <button class="btn btn-light border-0 d-xl-none m-0 position-absolute end-0 bg-transparent"
+          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <img src="img/master-page-icons/mobileMenu.svg" alt="menu" height="40" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Offcanvas for Mobile/Tablet -->
+  <div class="offcanvas offcanvas-top" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Menu</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <!-- Logo -->
+    </div>
+    <hr />
+    <div class="d-flex justify-content-center align-items-center gap-2">
+
+      <div class="d-flex text-end">
+        <div class="text-end">
+          <a href="#" class="nav-link position-relative text-decoration-none px-2 py-3 rounded-3" type="button"
+            id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/master-page-icons/search.svg" alt="language" height="21">
+            <span>Search</span>
+          </a>
+          <div class="dropdown-menu w-100 p-4" aria-labelledby="searchDropdown" style="transform: translateY(0);">
+            <div class="w-75 m-auto py-5">
+              <form action="/search" method="GET">
+                <div class="mb-3 mt-5">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" name="query" placeholder="Search here..." required />
+
+                    </div>
+                    <div class="col-2">
+
+                      <button type="submit" class="btn btn-primary w-100">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="text-primary py-2 fw-bold">suggested</h5>
+                <div class="mb-5 d-flex flex-wrap gap-2">
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 1
+                  </a>
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 2
+                  </a>
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 3
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Notification Start -->
+      <div class="d-flex dropdown text-end">
+        <div class="dropdown text-end">
+          <a class=" btn-clean dropdown-toggle nav-link text-decoration-none rounded-3 ps-3 pe-5 py-3 "
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/master-page-icons/notification-bill.svg" alt="notifications" height="21">
+            <span class="position-absolute top-30 translate-middle badge rounded-pill bg-danger">
+              20
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+            <div class="px-3 py-1 d-flex align-items-center justify-content-start">
+              <h5 class="notiy-title mb-0">Notifications</h5>
+            </div>
+            <div class="notify-list">
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/updates.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex justify-content-end p-3">
+                <button type="button" class="btn btn-clean .fs-7">
+                  <img src="img/master-page-icons/arrow-icon.svg" alt="" height="8"> View All
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Language Start -->
+      <div class="d-flex text-end">
+        <div class="text-end">
+          <a href="#" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 ">
+            <img src="img/master-page-icons/lang-flag.svg" alt="language" height="21">
+            <span>العربية</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <hr />
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="index.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/home.svg" alt="Home" height="21">
+            Home
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="standards.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/Standards.svg" alt="Standards" height="21">
+            Standards
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="training.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/training.svg" alt="Training" height="21">
+            Training
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="sharing.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/share.svg" alt="Sharing Files" height="21">
+            Sharing Files
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/setting.svg" alt="Settings" height="21">
+            Settings
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex flex-column align-items-start gap-3 px-3">
+
+        <a class=" m-0" href="#">
+          <img src="img/master-page-icons/lang-flag.svg" alt="Language" width="20" />
+          العربية
+        </a>
+
+        <!-- User Profile Start -->
+        <div class="profile">
+          <div class="dropdown">
+            <a href="#" class="d-block link-body-emphasis ">
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/master-page-icons/avatar.png" alt="user profile" height="45">
+                <ul class="m-0 list-unstyled text-start ">
+                  <li class="m-0 p-0">
+                    <h4 class="m-0 fs-6 fw-bold">User Name</h4>
+                  </li>
+                  <li class="m-0 p-0">
+                    <p class="m-0">Manager</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider Start -->
+  <div class="fluid-container main-content mx-0">
+
+    <!-- Banner Start -->
+    <div class="fluid-container pb-5">
+      <div id="homeSlider" class="carousel slide">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <a type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></a>
+          <a type="button" data-bs-target="#homeSlider" data-bs-slide-to="1" aria-label="Slide 2"></a>
+          <a type="button" data-bs-target="#homeSlider" data-bs-slide-to="2" aria-label="Slide 3"></a>
+        </div>
+
+        <!-- Sl -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/images/hslide01.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/images/hslide02.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/images/hslide03.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools Start -->
+  <div class=" container mt-6">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gy-4 gy-md-7">
+
+
+      <!-- Event Card item-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex mb-3">
+              <i class="gca-stroke gca-stroke-40 gca-calendar-03"></i>
+            </div>
+            <!-- Content -->
+            <div class="">
+              <h6 class="fw-bold mb-2">Upcomming <span class="text-primary">Events</span></h6>
+              <p class="mb-0 fs-6">22 July 2024</p>
+              <p class="mb-2 fs-6">16 Muharram 1446</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar Card item-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <h4 class="mb-0 fw-bold fs-6"> Weekly Calendar</h4>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-clean">
+                  <i class="gca-stroke gca-stroke-16 gca-arrow-left-02"></i>
+                </button>
+                <button class="btn btn-clean">
+                  <i class="gca-stroke gca-stroke-16 gca-arrow-right-02"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="mx-3">
+              <ul class="list-unstyled d-flex justify-content-between mb-2 px-2">
+                <li>
+                  <h6 class=".fs-7">Su</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">Mo</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">Tu</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">We</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">Th</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">Fr</h6>
+                </li>
+                <li>
+                  <h6 class=".fs-7">Sa</h6>
+                </li>
+              </ul>
+              <ul class="list-unstyled d-flex justify-content-between mb-0">
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    3
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    4
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    5
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    6
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    7
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    8
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-clean .fs-7 rounded-circle border border-primary"
+                    style="width: 24px; height: 24px;">
+                    9
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar Card item-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <h4 class="mb-0 fw-bold fs-6"> Weather</h4>
+            </div>
+            <!-- Content -->
+            <div class="mx-3">
+              <div class="d-flex justify-content-between">
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                  <h6>Sa</h6>
+                  <i class="bi bi-cloud-sun"></i>
+                  <span>20°C</span>
+                </div>
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                  <h6>Mo</h6>
+                  <i class="bi bi-cloud-rain"></i>
+                  <span>20°C</span>
+                </div>
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                  <h6>Tu</h6>
+                  <i class="bi bi-cloud-rain"></i>
+                  <span>20°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Direct Links Start -->
+  <div class=" container-fluid bg-light my-6 py-5 ">
+    <div class="container mx-auto">
+
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 row-cols-xl-6 gy-4 gy-md-7 mx-auto mt-0">
+        <!-- System Card item 1-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-analytics-02"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Dashboards</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 2-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-customer-support"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Mosaid.Tech</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 3-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-user-settings-01"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Self-Inquiry</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 4-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-user-group"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Shamel</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 5-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-teacher"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">SCL</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 6-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-activity-01"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">HEMH</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 7-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-catalogue"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">CTS</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 8-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-archive-02"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Watheqa</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 9-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-frameworks"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Methodology</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 10-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-finger-print-check"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Hadir</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- System Card item 11-->
+        <div class="col">
+          <a href="#" class=" m-0 p-0">
+            <div class="card p-3 pt-2 h-100">
+              <div class="card-body p-0">
+                <!-- Icon -->
+                <div class="d-flex mb-3">
+                  <i class="gca-stroke gca-stroke-40 text-primary gca-hierarchy"></i>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <h6 class="mb-2">Committee</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Internal Communications Start -->
+  <div class=" container mt-6">
+    <div class="row mb-3">
+      <div class="col d-flex justify-content-between">
+        <div class="">
+          <h3 class="fs-3 fw-bold mb-0">Internal Communications</h3>
+        </div>
+
+        <div class="">
+          <a type="button" class="btn btn-light" href="./all-news.html">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 gy-4 gy-md-7">
+      <!-- Card item 1-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex mt-2">
+              <img class="rounded-4" src="img/images/image-placeholder.png" width="100%">
+
+            </div>
+            <!-- Content -->
+            <div class="my-5">
+              <h5 class="m0 fw-bold">
+                The Title of the News
+              </h5>
+              <p class="my-0">Here you can include a brief description of the headline in four lines.</p>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-start p-0">
+            <a type="button" class="btn btn-primary" href="./single-news.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card item 2-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex mt-2">
+              <img class="rounded-4" src="img/images/image-placeholder.png" width="100%">
+
+            </div>
+            <!-- Content -->
+            <div class="my-5">
+              <h5 class="m0 fw-bold">
+                The Title of the News
+              </h5>
+              <p class="my-0">Here you can include a brief description of the headline in four lines.</p>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-start p-0">
+            <a type="button" class="btn btn-primary" href="./single-news.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card item 3-->
+      <div class="col">
+        <div class="card p-3 pt-2 h-100">
+          <div class="card-body p-0">
+            <!-- Icon -->
+            <div class="d-flex mt-2">
+              <img class="rounded-4" src="img/images/image-placeholder.png" width="100%">
+
+            </div>
+            <!-- Content -->
+            <div class="my-5">
+              <h5 class="m0 fw-bold">
+                The Title of the News
+              </h5>
+              <p class="my-0">Here you can include a brief description of the headline in four lines.</p>
+            </div>
+          </div>
+          <div class="card-footer d-flex justify-content-start p-0">
+            <a type="button" class="btn btn-primary" href="./single-news.html">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Decisions and News Start -->
+  <div class=" container-fluid bg-light mt-6 pb-5">
+    <div class="row container row-cols-1 row-cols-sm-1 row-cols-lg-2 gy-4 gy-md-7 mx-auto pb-5 py-5 px-0">
+      <div class="col">
+        <div class="row mb-3">
+          <div class="col">
+            <div class="d-flex justify-content-between">
+              <h3 class="fs-3 fw-bold mb-0">Internal Announcements</h3>
+              <a type="button" class="btn btn-light" href="./all-announcements.html">
+                View All
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="slider01" class="carousel slide h-100">
+              <div class="carousel-indicators">
+                <a type="button" data-bs-target="#slider01" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></a>
+                <a type="button" data-bs-target="#slider01" data-bs-slide-to="1" aria-label="Slide 2"></a>
+                <a type="button" data-bs-target="#slider01" data-bs-slide-to="2" aria-label="Slide 3"></a>
+              </div>
+              <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item h-100">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item h-100">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row mb-3">
+          <div class="col">
+            <div class="d-flex justify-content-between">
+              <h3 class="fs-3 fw-bold mb-0">General Announcements</h3>
+              <a type="button" class="btn btn-light" href="./all-announcements.html">
+                View All
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="slider02" class="carousel slide h-100">
+              <div class="carousel-indicators">
+                <a type="button" data-bs-target="#slider02" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></a>
+                <a type="button" data-bs-target="#slider02" data-bs-slide-to="1" aria-label="Slide 2"></a>
+                <a type="button" data-bs-target="#slider02" data-bs-slide-to="2" aria-label="Slide 3"></a>
+              </div>
+              <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <div class="card mb-5 h-100 p-3  pt-2">
+                    <div class="card-body p-0">
+                      <!-- Icon -->
+                      <div class="d-flex mb-3">
+                        <i class="gca-stroke gca-stroke-40 text-primary gca-file-audio"></i>
+                      </div>
+                      <!-- Content -->
+                      <div class="">
+                        <h6 class="fw-bold mb-2">Decision</h6>
+                        <p class="mb-0 fs-6">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                          Lorem Ipsum has been the industry's standard
+                          dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of
+                          the
+                          printing and
+                          typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry.</p>
+                        <a class="text-primary fw-bold" href="#">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Direct Links Start -->
+  <div class=" container mt-6 px-0">
+    <div class="row pt-5 px-3">
+      <h3 class="fs-3 fw-bold mb-0">Important Links</h3>
+    </div>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 row-cols-xl-6 gy-4 gy-md-7 mx-auto mb-5 mt-0">
+
+      <!-- External Link 1-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://www.arabosai.org/">
+              <img src="img/images/logo-6.png" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Link 2-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://www.gosi.gov.sa/ar">
+              <img src="img/icons/logo-5.svg" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Link 3-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://www.spa.gov.sa/">
+              <img src="img/images/SPA.png" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Link 4-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://www.gca.gov.sa/Pages/homePage.aspx">
+              <img src="img/master-page-icons/gca-logo.png" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Link 5-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://rserv1.bog.gov.sa/Eservices/Pages/default.aspx">
+              <img src="img/icons/logo-2.svg" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Link 61-->
+      <div class="col">
+        <div class="card p-3">
+          <div class="card-body p-0 m-0 d-flex justify-content-center align-items-center">
+            <a class="m-0 p-0" href="https://portal.etimad.sa/">
+              <img src="img/icons/logo-1.svg" alt="" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer Begin -->
+  <div class="container-fluid bg-success px-5 py-5 mt-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-4 gy-md-7">
+      <div class="col">
+        <h4 class="text-white pb-2 fs-4 border-bottom border-white-30">About GCA</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="text-white" href="about-us.html">About GCA</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="leadership.html">GCA's Leaders</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="our-activities.html">Institutional Capacity</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="saudi-center.html">Saudi Center for ...</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="reports.html">Reports</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="strategic-plan.html">Our Strategic Plan</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="employee-power.html">Institutional Capacity</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="digital-transformation.html">Digital Transformation</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="join-us.html">Join US</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="contact-us.html">Contact US</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-white pb-2 border-bottom border-white-30 fs-4">Media Center</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="text-white" href="news.html">News</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="images-gallery.html">Photo Gallery</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="media-gallery.html">Media Gallery</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="identity.html">Identity</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="events.html">Events</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="Issuances.html">Issuances</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-white pb-2 border-bottom border-white-30 fs-4">E-Services</h4>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="text-white" href="shamel.html">Shamel Platform</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="wathiqa.html">Wathiqa Platform</a>
+          </li>
+          <li class="mb-2">
+            <a class="text-white" href="#">SLA</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-white pb-2 border-bottom border-white-30 fs-4">Follow Us</h4>
+        <ul class="list-unstyled d-flex gap-2">
+          <li class=" mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="https://www.youtube.com/@-generalcourtofaudit1660">
+              <i class="gca-stroke gca-stroke-24 text-white gca-youtube"></i>
+            </a>
+          </li>
+          <li class=" mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="https://x.com/SaudiGCA">
+              <i class="gca-stroke gca-stroke-24 text-white gca-new-twitter"></i>
+            </a>
+          </li>
+          <li class=" mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="https://www.instagram.com/Saudigca/">
+              <i class="gca-stroke gca-stroke-24 text-white gca-instagram"></i>
+            </a>
+          </li>
+          <li class=" mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="#">
+              <i class="gca-stroke gca-stroke-24 text-white gca-snapchat"></i>
+            </a>
+          </li>
+        </ul>
+        <h4 class="text-white pb-2 border-bottom border-white-30 fs-4">Contact Us</h4>
+        <ul class="list-unstyled d-flex gap-2">
+          <li class="mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="#">
+              <i class="gca-stroke gca-stroke-24 text-white gca-location-01"></i>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="#">
+              <i class="gca-stroke gca-stroke-24 text-white gca-call"></i>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="social-links d-flex border border-white-30 justify-content-center align-items-center p-2 rounded-3"
+              href="#">
+              <i class="gca-stroke gca-stroke-24 text-white gca-mail-02"></i> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row py-5">
+      <div class="col ">
+        <a class="text-white" href="#">Site Map</a>
+      </div>
+    </div>
+    <div
+      class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
+      <div class="col">
+        <div class="d-flex justify-content-md-start justify-content-sm-center">
+          <p class="text-white">All rights reserved to the General Auditing Bureau © 2024</p>
+        </div>
+      </div>
+      <div class="col">
+        <ul
+          class="d-flex justify-content-md-end justify-content-sm-between justify-content-xs-between list-unstyled gap-3">
+          <li>
+            <img src="img/master-page-icons/gca-footer-logo.svg" alt="logo" height="50" />
+          </li>
+          <li>
+            <img src="img/master-page-icons/2030-logo.svg" alt="logo" height="50" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body End -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

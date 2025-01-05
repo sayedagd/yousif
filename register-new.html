@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="trl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>General Court of Audit - Internal Portal</title>
+  <link rel="stylesheet" href="css/gca-rtl.css">
+  <link rel="stylesheet" href="css/hugeicons-font.css">
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+
+</head>
+
+<body class="body">
+
+  <!-- TopBar start -->
+  <div class="container-fluid topbar bg-light px-5 py-2 mb-0 border-bottom">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 ">
+          <div class="d-flex align-items-center gap-1">
+            <a id="printPageButton" type="button">
+              <i class="gca-stroke gca-printer">
+              </i>
+            </a>
+          </div>
+          <a class="d-none d-md-block ">
+            <i class="gca-stroke gca-calendar-03">
+            </i>
+            <span class="text-body-secondary">
+              Monday, 22 July 2024, 16 Muharram 1446
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end ">
+          <div class="text-end">
+            <div href="#" class="position-relative rounded-3 ">
+              <i class="gca-stroke gca-user"></i>
+              <span>Mohamed Abdulaziz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Navbar start -->
+  <header class="header px-5 py-2 mb-0 border-bottom">
+    <div class="fluid-container d-flex justify-content-between">
+      <div class="d-flex flex-wrap align-items-center justify-content-start">
+        <a href="/" class="d-flex align-items-center link-body-emphasis ">
+          <img src="img/master-page-icons/gca-logo.png" alt="logo" height="60">
+        </a>
+        <ul class="d-none d-xl-flex nav main-nav justify-content-center ms-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-home-05"></i>
+              <span id="menu-home">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="standards.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-license"></i>
+              <span id="menu-standards">Standards</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="training.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-teaching"></i>
+              <span id="menu-training">Training</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="sharing.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-share-08"></i>
+              <span id="menu-sharing">Sharing Files</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown-center">
+              <a class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 fw-semibold dropdown-toggle"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span id="menu-setting">Admin Setting</span>
+                <i class="gca-stroke gca-arrow-down-01"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    Site Content
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="gca-stroke gca-user-group"></i>
+                    Site Groups
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-notification d-flex flex-wrap align-items-center justify-content-start">
+        <!-- Search Start -->
+        <div class="d-none d-xl-flex text-end">
+          <div class="text-end">
+            <a href="#" class="nav-link position-relative text-decoration-none px-2 py-3 rounded-3" type="button"
+              id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+
+              <i class="gca-stroke gca-search-01"></i>
+              <span>Search</span>
+            </a>
+            <div class="dropdown-menu w-100 p-4" aria-labelledby="searchDropdown" style="transform: translateY(0);">
+              <div class="w-75 m-auto py-5">
+                <form action="/search" method="GET">
+                  <div class="mb-3 mt-5">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" name="query" placeholder="Search here..." required />
+
+                      </div>
+                      <div class="col-2">
+
+                        <button type="submit" class="btn btn-primary w-100">
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="text-primary py-2 fw-bold">suggested</h5>
+                  <div class="mb-5 d-flex flex-wrap gap-2">
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 1
+                    </a>
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 2
+                    </a>
+                    <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                      Keyword 3
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Notification Start -->
+        <div class="d-none d-xl-flex dropdown text-end">
+          <div class="dropdown text-end">
+            <a class=" btn-clean dropdown-toggle nav-link text-decoration-none rounded-3 ps-3 pe-5 py-3 "
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="gca-stroke gca-notification-02"></i>
+              <span class="position-absolute top-30 translate-middle badge rounded-pill bg-danger">
+                20
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+              <div class="px-3 py-1 d-flex align-items-center justify-content-start">
+                <h5 class="notiy-title mb-0">Notifications</h5>
+              </div>
+              <div class="notify-list">
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-end p-3">
+                  <button type="button" class="btn btn-clean .fs-7">
+                    <i class="gca-stroke gca-arrow-right-02"></i>
+                    View All
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Language Start -->
+        <div class="d-none d-xl-flex text-end">
+          <div class="text-end">
+            <a id="lang-toggle" href="#" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 ">
+              <i class="gca-stroke gca-translation"></i>
+              <span id="lang-label">العربية</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Offcanvas Toggle -->
+        <button class="btn btn-light border-0 d-xl-none m-0 position-absolute end-0 bg-transparent"
+          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <img src="img/master-page-icons/mobileMenu.svg" alt="menu" height="40" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Offcanvas for Mobile/Tablet -->
+  <div class="offcanvas offcanvas-top" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">Menu</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <!-- Logo -->
+    </div>
+    <hr />
+    <div class="d-flex justify-content-center align-items-center gap-2">
+
+      <div class="d-flex text-end">
+        <div class="text-end">
+          <a href="#" class="nav-link position-relative text-decoration-none px-2 py-3 rounded-3" type="button"
+            id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/master-page-icons/search.svg" alt="language" height="21">
+            <span>Search</span>
+          </a>
+          <div class="dropdown-menu w-100 p-4" aria-labelledby="searchDropdown" style="transform: translateY(0);">
+            <div class="w-75 m-auto py-5">
+              <form action="/search" method="GET">
+                <div class="mb-3 mt-5">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" name="query" placeholder="Search here..." required />
+
+                    </div>
+                    <div class="col-2">
+
+                      <button type="submit" class="btn btn-primary w-100">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="text-primary py-2 fw-bold">suggested</h5>
+                <div class="mb-5 d-flex flex-wrap gap-2">
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 1
+                  </a>
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 2
+                  </a>
+                  <a href="#" type="button" class="btn btn-outline-secondary btn-sm">
+                    Keyword 3
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Notification Start -->
+      <div class="d-flex dropdown text-end">
+        <div class="dropdown text-end">
+          <a class=" btn-clean dropdown-toggle nav-link text-decoration-none rounded-3 ps-3 pe-5 py-3 "
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="img/master-page-icons/notification-bill.svg" alt="notifications" height="21">
+            <span class="position-absolute top-30 translate-middle badge rounded-pill bg-danger">
+              20
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+            <div class="px-3 py-1 d-flex align-items-center justify-content-start">
+              <h5 class="notiy-title mb-0">Notifications</h5>
+            </div>
+            <div class="notify-list">
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/updates.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a class="dropdown-item py-3" href="#">
+                  <div class="d-flex align-items-start gap-3">
+                    <div class="">
+                      <img src="img/master-page-icons/comment.svg" alt="notifications" height="21">
+                    </div>
+                    <div class="">
+                      <h6 class="notify-title">New Comment</h6>
+                      <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                    </div>
+                    <button type="button" class="btn-info">new</button>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex justify-content-end p-3">
+                <button type="button" class="btn btn-clean .fs-7">
+                  <img src="img/master-page-icons/arrow-icon.svg" alt="" height="8"> View All
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Language Start -->
+      <div class="d-flex text-end">
+        <div class="text-end">
+          <a href="#" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 ">
+            <img src="img/master-page-icons/lang-flag.svg" alt="language" height="21">
+            <span>العربية</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <hr />
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="index.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/home.svg" alt="Home" height="21">
+            Home
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="standards.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/Standards.svg" alt="Standards" height="21">
+            Standards
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="training.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/training.svg" alt="Training" height="21">
+            Training
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="sharing.html" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/share.svg" alt="Sharing Files" height="21">
+            Sharing Files
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#" class="nav-link fw-semibold px-0">
+            <img src="img/master-page-icons/setting.svg" alt="Settings" height="21">
+            Settings
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex flex-column align-items-start gap-3 px-3">
+
+        <a class=" m-0" href="#">
+          <img src="img/master-page-icons/lang-flag.svg" alt="Language" width="20" />
+          العربية
+        </a>
+
+        <!-- User Profile Start -->
+        <div class="profile">
+          <div class="dropdown">
+            <a href="#" class="d-block link-body-emphasis ">
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/master-page-icons/avatar.png" alt="user profile" height="45">
+                <ul class="m-0 list-unstyled text-start ">
+                  <li class="m-0 p-0">
+                    <h4 class="m-0 fs-6 fw-bold">User Name</h4>
+                  </li>
+                  <li class="m-0 p-0">
+                    <p class="m-0">Manager</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="container-fluid breadcrumb-bg py-4">
+    <div class="container mx-auto">
+      <div class="row mx-auto">
+        <h3 class="fs-3 fw-bold mb-0">تسجيل موظف جديد</h3>
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol id="breadcrumb_id" class="breadcrumb">
+              <li class="breadcrumb-item text-black" aria-current="page">
+                <a href="index.html">الرئيسية</a>
+              </li>
+              <li class="breadcrumb-item text-black" aria-current="page">
+                <a href="#">تسجيل موظف جديد</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-6">
+    <div class="row">
+      <div class="col">
+        <h3>
+          تسجيل موظف جديد
+        </h3>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <label for="employeeName" class="form-label">اسم الموظف</label>
+            <input type="text" class="form-control" id="employeeName" required>
+          </div>
+          <div class="d-flex justify-content-between gap-3 mb-3">
+            <div class="w-100">
+              <label for="idNumber" class="form-label">رقم الإقامة</label>
+              <input type="text" class="form-control" id="idNumber" required>
+            </div>
+            <div class="w-100">
+              <label for="idExpireDate" class="form-label">تاريخ انتهاء الإقامة</label>
+              <input type="text" class="form-control" id="date" placeholder="اختر التاريخ">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="nationality" class="form-label">الجنسية</label>
+            <select class="form-select" id="nationality" required>
+              <option value="">اختر الجنسية</option>
+              <option value="saudi">Saudi</option>
+              <option value="egyptian">Egyptian</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="joinDate" class="form-label">تاريخ المباشرة</label>
+            <input type="text" class="form-control" id="date2" placeholder="اختر التاريخ">
+          </div>
+          <div class="d-flex justify-content-between gap-3 mb-3">
+            <div class="w-100">
+              <label for="jobGrade" class="form-label">الوظيفة</label>
+              <select class="form-select" id="jobGrade" required>
+                <option value="">اختر الوظيفة</option>
+                <option value="junior">Junior</option>
+                <option value="mid">Mid</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+            <div class="w-100">
+              <label for="jobPosition" class="form-label">الدرجة الوظيفية</label>
+              <select class="form-select" id="jobPosition" required>
+                <option value="">اختر الدرجة الوظيفية</option>
+                <option value="developer">Developer</option>
+                <option value="tester">Tester</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 mb-3">
+            <div class="w-100">
+              <label for="basicSalary" class="form-label">الراتب الأساسي</label>
+              <input type="number" class="form-control" id="basicSalary" required>
+            </div>
+            <div class="w-100">
+              <label for="extraSalary" class="form-label">البدلات</label>
+              <input type="number" class="form-control" id="extraSalary" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="bankAccountNumber" class="form-label">الحساب البنكي</label>
+            <input type="text" class="form-control" id="bankAccountNumber" required>
+          </div>
+          <div class="mb-3">
+            <label for="mobileNumber" class="form-label">رقم الجوال</label>
+            <input type="tel" class="form-control" id="mobileNumber" required>
+          </div>
+          <div class="mb-3">
+            <label for="assignToProject" class="form-label">المشروع</label>
+            <select class="form-select" id="assignToProject" required>
+              <option value="">اختر المشروع</option>
+              <option value="project1">Project 1</option>
+              <option value="project2">Project 2</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="city" class="form-label">المدينة</label>
+            <select class="form-select" id="city" required>
+              <option value="">اختر المدينة</option>
+              <option value="riyadh">Riyadh</option>
+              <option value="jeddah">Jeddah</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="attachments" class="form-label">المرفقات</label>
+            <input class="form-control" type="file" id="attachments" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">إرسال للإعتماد</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Begin -->
+  <div class="container-fluid bg-success px-5 py-5 mt-5">
+
+    <div
+      class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
+      <div class="col">
+        <div class="d-flex justify-content-md-start justify-content-sm-center">
+          <p class="text-white">جميع الحقوق محفوظة لشركة أعمال طروق للمقاولات © 2024</p>
+        </div>
+      </div>
+      <div class="col">
+        <ul
+          class="d-flex justify-content-md-end justify-content-sm-between justify-content-xs-between list-unstyled gap-3">
+          <li>
+            <img src="img/master-page-icons/gca-footer-logo.svg" alt="logo" height="50" />
+          </li>
+          <li>
+            <img src="img/master-page-icons/2030-logo.svg" alt="logo" height="50" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body End -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    // Initialize Flatpickr
+    flatpickr("#date", "#date2", {
+      dateFormat: "Y-m-d",
+    });
+  </script>
+</body>
+
+</html>

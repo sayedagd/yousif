@@ -322,7 +322,7 @@
   <!-- Breadcrumb -->
   <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
     <div class="row mx-auto">
-      <h3 class="fs-3 fw-bold mb-0">جميع الموظفين</h3>
+      <h3 class="fs-3 fw-bold mb-0">الطلبات</h3>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol id="breadcrumb_id" class="breadcrumb">
@@ -330,7 +330,7 @@
               <a href="index.html">الرئيسية</a>
             </li>
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="#">جميع الموظفين</a>
+              <a href="#">جميع الطلبات</a>
             </li>
           </ol>
         </nav>
@@ -339,14 +339,61 @@
   </div>
 
   <div class="container-fluid px-3 px-md-6 mt-6">
-    <div class="row">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4 gy-md-7">
       <div class="col">
-        <h3>
-          جميع الموظفين
-        </h3>
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-user-group"></i>
+            <h5 class="card-title mt-3">الموظفين</h5>
+            <a href="/allEmplyees.html" class="btn btn-primary w-100">عرض جميع الموظفين</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row mt-5">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-user-add-01"></i>
+            <h5 class="card-title mt-3">تسجيل موظف جديد</h5>
+            <a href="/register-new.html" class="btn btn-primary w-100">تسجيل موظف جديد</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-user-account"></i>
+            <h5 class="card-title mt-3">طلب تجديد إقامة موظف</h5>
+            <a href="/iqama-renw.html" class="btn btn-primary w-100">إنشاء طلب تجديد</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-user-switch"></i>
+            <h5 class="card-title mt-3">طلب نقل خدمات موظف</h5>
+            <a href="/transfer-emplyee.html" class="btn btn-primary w-100">إنشاء طلب نقل</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-user-remove-01"></i>
+            <h5 class="card-title mt-3">طلب إنهاء خدمات موظف</h5>
+            <a href="/emplyeee-remove.html" class="btn btn-primary w-100">إنشاء طلب إنهاء</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="gca-stroke gca-stroke-40 text-primary gca-invoice"></i>
+            <h5 class="card-title mt-3">مسيرات الرواتب</h5>
+            <a href="#" class="btn btn-primary w-100">عرض جميع المسيرات </a>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -378,7 +425,6 @@
   <!-- Body End -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
-
 </body>
 
 </html>

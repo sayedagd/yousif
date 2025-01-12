@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="trl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>General Court of Audit - Internal Portal</title>
+  <link rel="icon" type="image/x-icon" href="img/fav.svg">
+  <link rel="stylesheet" href="css/gca-rtl.css">
+  <link rel="stylesheet" href="css/hugeicons-font.css">
+
+</head>
+
+<body class="body">
+
+  <!-- TopBar start -->
+  <div class="container-fluid topbar bg-light px-5 py-2 mb-0 border-bottom">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="d-flex flex-wrap align-items-center justify-content-start gap-2 ">
+          <div class="d-flex align-items-center gap-1">
+            <a id="printPageButton" type="button">
+              <i class="gca-stroke gca-printer">
+              </i>
+            </a>
+          </div>
+          <a class="d-none d-md-block ">
+            <i class="gca-stroke gca-calendar-03">
+            </i>
+            <span class="text-body-secondary">
+              Monday, 22 July 2024, 16 Muharram 1446
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end ">
+          <div class="text-end">
+            <div href="#" class="position-relative rounded-3 ">
+              <i class="gca-stroke gca-user"></i>
+              <span>Mohamed Abdulaziz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Navbar start -->
+  <header class="header px-5 py-2 mb-0 border-bottom">
+    <div class="fluid-container d-flex justify-content-between">
+      <div class="d-flex flex-wrap align-items-center justify-content-start">
+        <a href="/" class="d-flex align-items-center link-body-emphasis ">
+          <img src="img/logo-colored.svg" alt="logo" height="60">
+        </a>
+        <ul class="d-none d-xl-flex nav main-nav justify-content-center ms-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-home-05"></i>
+              <span class="fw-bold">الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="transfers.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-license"></i>
+              <span class="fw-bold">التحويلات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-teaching"></i>
+              <span class="fw-bold">التقارير</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="vendors-reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-share-08"></i>
+              <span class="fw-bold">تقرير المستفيدين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="vendors.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+              <i class="gca-stroke gca-share-08"></i>
+              <span class="fw-bold">المستفيدين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown-center">
+              <a class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 fw-semibold dropdown-toggle"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="gca-stroke gca-user-group"></i>
+                <span class="fw-bold">خدمات الموظفين</span>
+                <i class="gca-stroke gca-arrow-down-01"></i>
+              </a>
+              <ul class="dropdown-menu text-start">
+                <li>
+                  <a class="dropdown-item" href="allEmplyees.html">
+                    <i class="gca-stroke gca-user-group"></i>
+                    <span class="fw-bold">جميع الموظفين</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="all-forms.html">
+                    <i class="gca-stroke gca-catalogue"></i>
+                    <span class="fw-bold">جميع الطلبات</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="salarys.html">
+                    <i class="gca-stroke gca-money-send-01"></i>
+                    <span class="fw-bold">مسيرات الرواتب</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-notification d-flex flex-wrap align-items-center justify-content-start">
+        <!-- Notification Start -->
+        <div class="d-flex dropdown me-0 me-sm-3 text-end">
+          <div class="dropdown text-end">
+            <a class=" btn-clean dropdown-toggle nav-link text-decoration-none rounded-3 ps-3 pe-5 py-3 "
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="gca-stroke gca-notification-02"></i>
+              <span class="position-absolute top-30 translate-middle badge rounded-pill bg-danger">
+                20
+              </span>
+            </a>
+            <div class="dropdown-menu dropdown-notify dropdown-menu-end shadow">
+              <div class="px-3 py-1 d-flex align-items-center justify-content-start">
+                <h5 class="notiy-title mb-0">Notifications</h5>
+              </div>
+              <div class="notify-list">
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a class="dropdown-item py-3" href="#">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="">
+                        <i class="gca-stroke gca-comment-01"></i>
+                      </div>
+                      <div class="">
+                        <h6 class="notify-title">New Comment</h6>
+                        <p class="mb-0 notify-desc">Abdulaziz Ahmed replied on your comment</p>
+                      </div>
+                      <button type="button" class="btn-info">new</button>
+                    </div>
+                  </a>
+                </div>
+                <div class="d-flex justify-content-end p-3">
+                  <button type="button" class="btn btn-clean .fs-7">
+                    <i class="gca-stroke gca-arrow-right-02"></i>
+                    View All
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Offcanvas Toggle -->
+        <button class="btn btn-light border-0 d-xl-none m-0 position-absolute end-0 bg-transparent"
+          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="gca-stroke gca-stroke-40 gca-menu-01"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Offcanvas for Mobile/Tablet -->
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title">القائمة</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <!-- Logo -->
+    </div>
+    <hr class="mb-0" />
+    <div class="offcanvas-body d-flex flex-column justify-content-between pt-0">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="index.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <i class="gca-stroke gca-home-05"></i>
+            <span class="fw-bold">الرئيسية</span>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="transfers.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <i class="gca-stroke gca-license"></i>
+            <span class="fw-bold">التحويلات</span>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <i class="gca-stroke gca-teaching"></i>
+            <span class="fw-bold">التقارير</span>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="vendors-reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <i class="gca-stroke gca-share-08"></i>
+            <span class="fw-bold">تقرير المستفيدين</span>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="vendors.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <i class="gca-stroke gca-share-08"></i>
+            <span class="fw-bold">المستفيدين</span>
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="#menu1" class="d-flex justify-content-between align-items-center menu-item border-0 fw-bold"
+            data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="menu1">
+            <span>
+              <i class="gca-stroke gca-user-group"></i>
+              خدمات الموظفين
+            </span>
+            <i class="gca-stroke gca-arrow-down-01"></i>
+          </a>
+          <ul class="collapse list-unstyled submenu border-0 mt-2" id="menu1">
+            <li>
+              <a class="list-group-item border-0" href="allEmplyees.html">
+                <i class="gca-stroke gca-user-group"></i>
+                <span class="fw-bold">جميع الموظفين</span>
+              </a>
+            </li>
+            <li>
+              <a class="list-group-item border-0" href="all-forms.html">
+                <i class="gca-stroke gca-catalogue"></i>
+                <span class="fw-bold">جميع الطلبات</span>
+              </a>
+            </li>
+            <li>
+              <a class="list-group-item border-0" href="sala">
+                <i class="gca-stroke gca-money-send-01"></i>
+                <span class="fw-bold">مسيرات الرواتب</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex flex-column align-items-start gap-3 px-3">
+        <!-- User Profile Start -->
+        <div class="profile">
+          <div class="dropdown">
+            <a href="#" class="d-block link-body-emphasis ">
+              <div class="d-flex align-items-center gap-2">
+                <i class="gca-stroke gca-stroke-40 gca-user"></i>
+                <ul class="m-0 list-unstyled text-start ">
+                  <li class="m-0 p-0">
+                    <h4 class="m-0 fs-6 fw-bold">User Name</h4>
+                  </li>
+                  <li class="m-0 p-0">
+                    <p class="m-0">Manager</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
+    <div class="row mx-auto">
+      <h3 class="fs-3 fw-bold mb-0">المشاريع</h3>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol id="breadcrumb_id" class="breadcrumb">
+            <li class="breadcrumb-item text-black" aria-current="page">
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item text-black" aria-current="page">
+              <a href="#">المشاريع</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-3 px-md-6 mt-6">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-end mb-5">
+          <button type="button" class="btn btn-primary">إضافة مشروع جديد</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column align-items-start gap-3">
+                <div class="d-flex align-items-center align-items-center gap-3">
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-real-estate-02"></i>
+                  <h3 class="fw-bold mb-0">جميع المشاريع</h3>
+                </div>
+                <h5 class="mb-0 mt-2">
+                  العدد
+                  <span class="btn-info px-3 rounded-3">8</span>
+                </h5>
+                <h5 class="mb-0 mt-2">
+                  القيمة
+                  <span class="btn-info px-3 rounded-3">12353654</span>
+                  ر.س
+                </h5>
+              </div>
+              <div class="d-flex flex-column align-items-start gap-3">
+                <div class="d-flex align-items-center align-items-center gap-3">
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-timer-01"></i>
+                  <h3 class="fw-bold mb-0">المشاريع الحالية</h3>
+                </div>
+                <h5 class="mb-0 mt-2">
+                  العدد
+                  <span class="btn-info px-3 rounded-3">8</span>
+                </h5>
+                <h5 class="mb-0 mt-2">
+                  القيمة
+                  <span class="btn-info px-3 rounded-3">12353654</span>
+                  ر.س
+                </h5>
+              </div>
+              <div class="d-flex flex-column align-items-start gap-3">
+                <div class="d-flex align-items-center align-items-center gap-3">
+                  <i class="gca-stroke gca-stroke-32 text-danger gca-time-quarter-pass "></i>
+                  <h3 class="fw-bold mb-0"> المشاريع المنتهية</h3>
+                </div>
+                <h5 class="mb-0 mt-2">
+                  العدد
+                  <span class="btn-info px-3 rounded-3">8</span>
+                </h5>
+                <h5 class="mb-0 mt-2">
+                  القيمة
+                  <span class="btn-info px-3 rounded-3">12353654</span>
+                  ر.س
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-3 px-md-6 mt-2">
+    <div class="row">
+      <div class="col">
+        <form action="" class="d-flex justify-content-end mt-5">
+          <input type="search" class="form-control" id="search" name="search" placeholder="ابحث في المشاريع">
+          <button type="submit" class="btn btn-primary d-flex align-items-center">
+            <i class="gca-stroke gca-search-01 text-white px-3"></i>
+            <span>ابحث</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-3 px-md-6 mt-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-start align-items-center gap-3">
+                <div>
+                  <i class="gca-stroke gca-stroke-32 text-primary gca-building-03"></i>
+                </div>
+                <div>
+                  <h5 class="card-title mt-3">
+                    وزارة الشؤون الأسلامية والدعوة والإرشاد
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="text-justify">
+                  مشروع صيانه ونظافه المجموعه الثالثه عدد (354)مسجد وجامع في محافظات بقعاء و الغزالة و الروضة و فيد و
+                  الشنان و سميراء
+                  بمنطقه حائل
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  قيمة المشروع
+                  <span class="btn-info px-2">
+                    3454665
+                  </span>
+                </p>
+                <p>
+                  المدة المتبقية بالأيام
+                  <span class="btn-info px-2">
+                    321
+                  </span>
+                </p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <p>
+                  تاريخ البداية
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+                <p>
+                  تاريخ الإنتهاد
+                  <span class="btn-info px-2">
+                    20-12-2025
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Begin -->
+  <div class="container-fluid bg-success px-5 py-5 mt-5">
+
+    <div
+      class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
+      <div class="col">
+        <div class="d-flex justify-content-md-start justify-content-sm-center">
+          <p class="text-white">جميع الحقوق محفوظة لشركة أعمال طروق للمقاولات © 2024</p>
+        </div>
+      </div>
+      <div class="col">
+        <ul
+          class="d-flex justify-content-md-end justify-content-sm-between justify-content-xs-between list-unstyled gap-3">
+          <li>
+            <img src="img/logo-white.svg" alt="logo" height="50" />
+          </li>
+          <li>
+            <img src="img/2030-logo.svg" alt="logo" height="50" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body End -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

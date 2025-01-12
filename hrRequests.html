@@ -320,130 +320,279 @@
     </div>
   </div>
 
-  <div class="container-fluid px-3 px-md-6 mt-6">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+  <!-- Breadcrumb -->
+  <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
+    <div class="row mx-auto">
+      <h3 class="fs-3 fw-bold mb-0">طلبات الموارد البشرية</h3>
       <div class="col">
-        <a href="/projects.html" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-real-estate-02"></i>
-                  <h5 class="card-title mt-3">المشاريع</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">5</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="/transfers.html" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-money-send-01"></i>
-                  <h5 class="card-title mt-3">التحويلات</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">892</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-money-not-found-01"></i>
-                  <h5 class="card-title mt-3">التحويلات المعلقة</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">17</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-file-01"></i>
-                  <h5 class="card-title mt-3">التقارير</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">5</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-user-group"></i>
-                  <h5 class="card-title mt-3">المستفيدين</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">892</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="/hrRequests.html" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-file-management"></i>
-                  <h5 class="card-title mt-3">طلبات الموارد البشرية</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">17</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <i class="gca-stroke gca-stroke-40 text-primary gca-user-group"></i>
-                  <h5 class="card-title mt-3">الموظفين</h5>
-                </div>
-                <div>
-                  <h2 class="m-0">17</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
+        <nav aria-label="breadcrumb">
+          <ol id="breadcrumb_id" class="breadcrumb">
+            <li class="breadcrumb-item text-black" aria-current="page">
+              <a href="index.html">الرئيسية</a>
+            </li>
+            <li class="breadcrumb-item text-black" aria-current="page">
+              <a href="#">طلبات الموارد البشرية</a>
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
   </div>
 
+  <div class="container-fluid px-3 px-md-6 mt-6">
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fs-5" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+          role="tab" aria-controls="tab1" aria-selected="true">
+          جميع الطلبات
+          <span class="badge bg-primary">2323</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fs-5" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+          aria-controls="tab2" aria-selected="false">
+          الطلبات المعلقة
+          <span class="badge bg-danger">2323</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content mt-3" id="myTabContent">
+      <!-- Tab 1 Content -->
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>م</th>
+                <th>نوع الطلب</th>
+                <th>اسم الموظف</th>
+                <th>رقم الإقامة</th>
+                <th>الوظيفة</th>
+                <th>المشروع</th>
+                <th>حالة الطلب</th>
+                <th>اضيف بواسطة</th>
+                <th>تاريخ الإضافة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>مباشرة موظف</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>نقل خدمات</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>تجديد إقامة</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>تجديد إقامة</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2 Content -->
+      <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>م</th>
+                <th>نوع الطلب</th>
+                <th>اسم الموظف</th>
+                <th>رقم الإقامة</th>
+                <th>الوظيفة</th>
+                <th>المشروع</th>
+                <th>حالة الطلب</th>
+                <th>اضيف بواسطة</th>
+                <th>تاريخ الإضافة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>مباشرة موظف</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>نقل خدمات</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>تجديد إقامة</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>تجديد إقامة</td>
+                <td>
+                  <a href="/review-register.html" class="fw-bold text-decoration-none text-primary">
+                    يوسف علاء
+                  </a>
+                </td>
+                <td>24354565646</td>
+                <td>مهندس</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  في انتظار الموافقة
+                  <span class="btn btn-info px-2">
+                    المراجع
+                  </span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+                <td>
+                  22/07/2024
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Footer Begin -->

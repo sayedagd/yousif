@@ -322,7 +322,7 @@
   <!-- Breadcrumb -->
   <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
     <div class="row mx-auto">
-      <h3 class="fs-3 fw-bold mb-0">جميع الموظفين</h3>
+      <h3 class="fs-3 fw-bold mb-0">مسيرات الرواتب</h3>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol id="breadcrumb_id" class="breadcrumb">
@@ -330,7 +330,7 @@
               <a href="index.html">الرئيسية</a>
             </li>
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="#">جميع الموظفين</a>
+              <a href="#">مسيرات الرواتب</a>
             </li>
           </ol>
         </nav>
@@ -338,22 +338,501 @@
     </div>
   </div>
 
+  <!-- Search -->
   <div class="container-fluid px-3 px-md-6 mt-6">
     <div class="row">
       <div class="col">
-        <h3>
-          جميع الموظفين
-        </h3>
+        <form action="" class="d-flex justify-content-end mt-5 gap-3">
+          <div class="input-group rounded-3">
+            <span class="input-group-text bg-white border-end-0" id="basic-addon1">
+              <i class="gca-stroke gca-search-01"></i>
+            </span>
+            <input type="text" class="form-control border-start-0" placeholder="ابحث" aria-label="Search"
+              aria-describedby="basic-addon1">
+          </div>
+          <button type="submit" class="btn btn-primary d-flex align-items-center">
+            <span>ابحث</span>
+          </button>
+        </form>
       </div>
-    </div>
-    <div class="row mt-5">
-
     </div>
   </div>
 
+  <div class="container-fluid px-3 px-md-6 mt-4">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary d-flex align-items-center">
+          <i class="gca-stroke gca-plus"></i>
+          <span>إنشاء مسير راتب</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-3 px-md-6 mt-4">
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fs-5" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+          role="tab" aria-controls="tab1" aria-selected="true">
+          جميع المسيرات
+          <span class="badge bg-primary">2323</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fs-5" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+          aria-controls="tab2" aria-selected="false">
+          المسيرات المعلقة
+          <span class="badge bg-danger">2323</span>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content mt-3" id="myTabContent">
+      <!-- Tab 1 Content -->
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <div class="accordion" id="accordionMonth01">
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                مسيرات شهر يناير 2025
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionMonth01">
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>م</th>
+                        <th>اسم المشروع</th>
+                        <th>عدد الموظفين</th>
+                        <th>إجمالي الرواتب</th>
+                        <th>التاريخ</th>
+                        <th>تاريخ الإصدار</th>
+                        <th>حالة الطلب</th>
+                        <th>اضيف بواسطة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                مسيرات شهر فبراير 2025
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMonth01">
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>م</th>
+                        <th>اسم المشروع</th>
+                        <th>عدد الموظفين</th>
+                        <th>إجمالي الرواتب</th>
+                        <th>التاريخ</th>
+                        <th>تاريخ الإصدار</th>
+                        <th>حالة الطلب</th>
+                        <th>اضيف بواسطة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                مسيرات شهر مارس 2025
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMonth01">
+              <div class="accordion-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>م</th>
+                        <th>اسم المشروع</th>
+                        <th>عدد الموظفين</th>
+                        <th>إجمالي الرواتب</th>
+                        <th>التاريخ</th>
+                        <th>تاريخ الإصدار</th>
+                        <th>حالة الطلب</th>
+                        <th>اضيف بواسطة</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>مشروع الرياض</td>
+                        <td>
+                          21324
+                        </td>
+                        <td>2154866</td>
+                        <td>2024-12</td>
+                        <td>2024-12-20</td>
+                        <td>
+                          <span class="btn btn-success px-2">مقبول</span>
+                        </td>
+                        <td>
+                          HR Manager
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 Content -->
+      <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th>م</th>
+                <th>اسم المشروع</th>
+                <th>عدد الموظفين</th>
+                <th>إجمالي الرواتب</th>
+                <th>التاريخ</th>
+                <th>تاريخ الإصدار</th>
+                <th>حالة الطلب</th>
+                <th>اضيف بواسطة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  21324
+                </td>
+                <td>2154866</td>
+                <td>2024-12</td>
+                <td>2024-12-20</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  21324
+                </td>
+                <td>2154866</td>
+                <td>2024-12</td>
+                <td>2024-12-20</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  21324
+                </td>
+                <td>2154866</td>
+                <td>2024-12</td>
+                <td>2024-12-20</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  21324
+                </td>
+                <td>2154866</td>
+                <td>2024-12</td>
+                <td>2024-12-20</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>مشروع الرياض</td>
+                <td>
+                  21324
+                </td>
+                <td>2154866</td>
+                <td>2024-12</td>
+                <td>2024-12-20</td>
+                <td>
+                  <span class="btn btn-success px-2">مقبول</span>
+                </td>
+                <td>
+                  HR Manager
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Footer Begin -->
   <div class="container-fluid bg-success px-5 py-5 mt-5">
-
     <div
       class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
       <div class="col">

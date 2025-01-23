@@ -75,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="vendors-reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+            <a href="vendorsReports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
               <i class="gca-stroke gca-share-08"></i>
               <span class="fw-bold">تقرير المستفيدين</span>
             </a>
@@ -95,19 +95,19 @@
               </a>
               <ul class="dropdown-menu text-start">
                 <li>
-                  <a class="dropdown-item" href="allEmplyees.html">
+                  <a class="dropdown-item" href="emplyees.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">جميع الموظفين</span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="all-forms.html">
+                  <a class="dropdown-item" href="hrIndex.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">جميع الطلبات</span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="salarys.html">
+                  <a class="dropdown-item" href="payroll.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">مسيرات الرواتب</span>
                   </a>
@@ -254,7 +254,7 @@
           </a>
         </li>
         <li class="list-group-item">
-          <a href="vendors-reports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
+          <a href="vendorsReports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
             <i class="gca-stroke gca-share-08"></i>
             <span class="fw-bold">تقرير المستفيدين</span>
           </a>
@@ -276,13 +276,13 @@
           </a>
           <ul class="collapse list-unstyled submenu border-0 mt-2" id="menu1">
             <li>
-              <a class="list-group-item border-0" href="allEmplyees.html">
+              <a class="list-group-item border-0" href="hrRequests.html">
                 <i class="gca-stroke gca-license-draft"></i>
                 <span class="fw-bold">جميع الموظفين</span>
               </a>
             </li>
             <li>
-              <a class="list-group-item border-0" href="sala">
+              <a class="list-group-item border-0" href="payroll.html">
                 <i class="gca-stroke gca-license-draft"></i>
                 <span class="fw-bold">مسيرات الرواتب</span>
               </a>
@@ -322,15 +322,15 @@
   <!-- Breadcrumb -->
   <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
     <div class="row mx-auto">
-      <h3 class="fs-3 fw-bold mb-0">طلب نقل خدمات موظف</h3>
+      <h3 class="fs-3 fw-bold mb-0">طلب تجديد إقامة</h3>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol id="breadcrumb_id" class="breadcrumb">
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="index.html">الرئيسية</a>
+              <a href="hrIndex.html">الرئيسية</a>
             </li>
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="#">طلب نقل خدمات موظف</a>
+              <a href="#">طلب تجديد إقامة</a>
             </li>
           </ol>
         </nav>
@@ -342,7 +342,7 @@
     <div class="row">
       <div class="col">
         <h3>
-          طلب نقل خدمات موظف
+          طلب تجديد إقامة
         </h3>
       </div>
     </div>
@@ -361,6 +361,10 @@
             <div class="w-100">
               <label for="idExpireDate" class="form-label">تاريخ انتهاء الإقامة</label>
               <input type="text" class="form-control" id="date" placeholder="اختر التاريخ">
+            </div>
+            <div class="w-100">
+              <label for="joinDate" class="form-label">المدة المتبقية في الإقامة بالأيام</label>
+              <input type="number" class="form-control" id="date2" placeholder="اختر التاريخ">
             </div>
           </div>
           <div class="d-flex justify-content-between gap-3 mb-3">
@@ -382,15 +386,9 @@
               </select>
             </div>
           </div>
-          <div class="d-flex justify-content-between gap-3 mb-3">
-            <div class="w-100">
-              <label for="companyName" class="form-label">اسم المنشأة</label>
-              <input type="text" class="form-control" id="companyName" required>
-            </div>
-            <div class="w-100">
-              <label for="oldCompany" class="form-label">اسم الكفيل القديم</label>
-              <input type="text" class="form-control" id="oldCompany" required>
-            </div>
+          <div class="mb-3">
+            <label for="companyName" class="form-label">اسم المنشأة</label>
+            <input type="text" class="form-control" id="companyName" required>
           </div>
           <div class="mb-3">
             <label for="assignToProject" class="form-label">المشروع</label>
@@ -445,6 +443,7 @@
   <!-- Body End -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
+
 </body>
 
 </html>

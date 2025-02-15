@@ -75,15 +75,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="vendorsReports.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
-              <i class="gca-stroke gca-share-08"></i>
-              <span class="fw-bold">تقرير المستفيدين</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a href="vendors.html" class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3">
               <i class="gca-stroke gca-share-08"></i>
-              <span class="fw-bold">المستفيدين</span>
+              <span class="fw-bold">الموردين</span>
             </a>
           </li>
           <li class="nav-item">
@@ -110,6 +104,47 @@
                   <a class="dropdown-item" href="payroll.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">مسيرات الرواتب</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown-center">
+              <a class="nav-link position-relative text-decoration-none rounded-3 px-2 py-3 fw-semibold dropdown-toggle"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fw-bold">المشتريات</span>
+                <i class="gca-stroke gca-arrow-down-01"></i>
+              </a>
+              <ul class="dropdown-menu text-start">
+                <li>
+                  <a class="dropdown-item" href="purchasingRequest.html">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    <span class="fw-bold">إنشاء طلب</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="purchasing.html">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    <span class="fw-bold">جميع الطلبات</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="reports.html">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    <span class="fw-bold">التقارير</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    <span class="fw-bold">المشاريع</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="vendors.html">
+                    <i class="gca-stroke gca-license-draft"></i>
+                    <span class="fw-bold">المستفيدين</span>
                   </a>
                 </li>
               </ul>
@@ -322,15 +357,15 @@
   <!-- Breadcrumb -->
   <div class="container-fluid px-3 px-md-6 breadcrumb-bg py-4">
     <div class="row mx-auto">
-      <h3 class="fs-3 fw-bold mb-0">تقارير المستفيدين</h3>
+      <h3 class="fs-3 fw-bold mb-0">تسجيل مورد جديد</h3>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol id="breadcrumb_id" class="breadcrumb">
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="index.html">الرئيسية</a>
+              <a href="hrIndex.html">الرئيسية</a>
             </li>
             <li class="breadcrumb-item text-black" aria-current="page">
-              <a href="#">تقارير المستفيدين</a>
+              <a href="#">تسجيل مورد جديد</a>
             </li>
           </ol>
         </nav>
@@ -338,20 +373,66 @@
     </div>
   </div>
 
-  <div class="container-fluid px-3 px-md-6 py-4 mt-6">
-    <div class="rwo">
+  <div class="container-fluid px-3 px-md-6 mt-6">
+    <div class="row">
       <div class="col">
         <h3>
-          صفحة تقارير المستفيدين
+          تسجيل مورد جديد
         </h3>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <form>
+          <div class="mb-3">
+            <label for="employeeName" class="form-label">اسم المورد</label>
+            <input type="text" class="form-control" id="employeeName" required>
+          </div>
+          <div class="d-flex justify-content-between gap-3 mb-3">
+            <div class="w-100">
+              <label for="region" class="form-label">المنطقة</label>
+              <select class="form-select" id="region" required>
+                <option value="">اختر المنطقة</option>
+                <option value="riyadh">الرياض</option>
+                <option value="hayel">حائل</option>
+                <option value="alsharqia">الشرقية</option>
+              </select>
+            </div>
+            <div class="w-100">
+              <label for="city" class="form-label">المدينة</label>
+              <select class="form-select" id="city" required>
+                <option value="">اختر المدينة </option>
+                <option value="riyadh">الرياض</option>
+                <option value="damman">الدمام</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between gap-3 mb-3">
+            <div class="w-100">
+              <label for="bankAccountNumber" class="form-label">الحساب البنكي</label>
+              <input type="text" class="form-control" id="bankAccountNumber" required>
+            </div>
+            <div class="w-100">
+              <label for="mobileNumber" class="form-label">رقم الجوال</label>
+              <input type="tel" class="form-control" id="mobileNumber" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="notes" class="form-label">وصف الخدمة المقدمة</label>
+            <textarea class="form-control" id="notes" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="attachments" class="form-label">المرفقات</label>
+            <input class="form-control" type="file" id="attachments" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">إرسال للإعتماد</button>
+        </form>
       </div>
     </div>
   </div>
 
-
   <!-- Footer Begin -->
-  <div class="container-fluid bg-success px-5 py-5 mt-5">
-
+  <div class="container-fluid fixed-bottom bg-success px-5 py-5 mt-5">
     <div
       class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
       <div class="col">

@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="img/fav.svg">
   <link rel="stylesheet" href="css/gca-rtl.css">
   <link rel="stylesheet" href="css/hugeicons-font.css">
+  <script src="customComponents/homeCards.js"></script>
 
 </head>
 
@@ -89,7 +90,7 @@
               </a>
               <ul class="dropdown-menu text-start">
                 <li>
-                  <a class="dropdown-item" href="emplyees.html">
+                  <a class="dropdown-item" href="employees.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">جميع الموظفين</span>
                   </a>
@@ -354,7 +355,7 @@
     </div>
   </div>
 
-  <div class="container-fluid px-3 px-md-6 mt-6">
+  <!-- <div class="container-fluid px-3 px-md-6 mt-6">
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
       <div class="col">
         <a href="/projects.html" class="text-decoration-none">
@@ -442,7 +443,7 @@
         </a>
       </div>
       <div class="col">
-        <a href="emplyees.html" class="text-decoration-none">
+        <a href="employees.html" class="text-decoration-none">
           <div class="card h-100">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
@@ -459,11 +460,21 @@
         </a>
       </div>
     </div>
+  </div> -->
+
+  <div class="container-fluid px-3 px-md-6 mt-6">
+    <custom-card-grid data-cards='[{"title":"المشاريع","count":"5","icon":"gca-real-estate-02","link":"/projects.html"},
+                       {"title":"التحويلات","count":"892","icon":"gca-money-send-01","link":"/transfers.html"},
+                       {"title":"التقارير","count":"5","icon":"gca-file-01","link":"/reports.html"},
+                       {"title":"الموردين","count":"892","icon":"gca-user-group","link":"/vendors.html"},
+                       {"title":"طلبات الموارد البشرية","count":"17","icon":"gca-file-management","link":"/hrRequests.html"},
+                       {"title":"الموظفين","count":"17","icon":"gca-user-group","link":"/employees.html"}]'>
+    </custom-card-grid>
   </div>
 
-
   <!-- Footer Begin -->
-  <div class="container-fluid fixed-bottom bg-success px-5 py-5 mt-5">
+  <div class="flex-1"></div>
+  <div class="container-fluid bg-success px-5 py-5 mt-5">
     <div
       class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
       <div class="col">

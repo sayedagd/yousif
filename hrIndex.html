@@ -9,6 +9,9 @@
   <link rel="icon" type="image/x-icon" href="img/fav.svg">
   <link rel="stylesheet" href="css/gca-rtl.css">
   <link rel="stylesheet" href="css/hugeicons-font.css">
+  <script src="customComponents/breadcrumb.js"></script>
+  <script src="customComponents/HrRequests.js"></script>
+
 
 </head>
 
@@ -89,7 +92,7 @@
               </a>
               <ul class="dropdown-menu text-start">
                 <li>
-                  <a class="dropdown-item" href="emplyees.html">
+                  <a class="dropdown-item" href="employees.html">
                     <i class="gca-stroke gca-license-draft"></i>
                     <span class="fw-bold">جميع الموظفين</span>
                   </a>
@@ -355,93 +358,22 @@
   </div>
 
   <div class="container-fluid px-3 px-md-6 mt-6">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4 gy-md-7">
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-real-estate-02"></i>
-            <h5 class="card-title mt-3">المشاريع</h5>
-            <a href="/projects.html" class="btn btn-primary w-100">جميع المشاريع</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-group"></i>
-            <h5 class="card-title mt-3">الموظفين</h5>
-            <a href="/emplyees.html" class="btn btn-primary w-100">عرض جميع الموظفين</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-file-management"></i>
-            <h5 class="card-title mt-3">جميع الطلبات</h5>
-            <a href="/hrRequests.html" class="btn btn-primary w-100">عرض جميع الطلبات</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-add-01"></i>
-            <h5 class="card-title mt-3">تسجيل موظف جديد</h5>
-            <a href="/newEmplyee.html" class="btn btn-primary w-100">تسجيل موظف جديد</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-account"></i>
-            <h5 class="card-title mt-3">طلب تجديد إقامة موظف</h5>
-            <a href="/iqamaRenw.html" class="btn btn-primary w-100">إنشاء طلب تجديد</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-switch"></i>
-            <h5 class="card-title mt-3">طلب نقل خدمات موظف</h5>
-            <a href="/transferEmplyeeExternally.html" class="btn btn-primary w-100">إنشاء طلب نقل</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-arrow-left-right"></i>
-            <h5 class="card-title mt-3">طلب نقل موظف إلى مشروع آخر</h5>
-            <a href="/transferEmployeeInternally.html" class="btn btn-primary w-100">إنشاء طلب نقل</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-user-remove-01"></i>
-            <h5 class="card-title mt-3">طلب إنهاء خدمات موظف</h5>
-            <a href="/employeeTermination.html" class="btn btn-primary w-100">إنشاء طلب إنهاء</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="gca-stroke gca-stroke-40 text-primary gca-invoice"></i>
-            <h5 class="card-title mt-3">مسيرات الرواتب</h5>
-            <a href="/payroll.html" class="btn btn-primary w-100">عرض جميع المسيرات </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <hr-requests data-cards='[{"icon":"gca-real-estate-02","title":"المشاريع","link":"/projects.html","btntitle":"جميع المشاريع"},
+                       {"icon":"gca-user-group","title":"الموظفين","link":"/employees.html","btntitle":"عرض جميع الموظفين"},
+                       {"icon":"gca-file-management","title":"جميع الطلبات","link":"/hrRequests.html","btntitle":"جميع الطلبات"},
+                       {"icon":"gca-user-add-01","title":"تسجيل موظف جديد","link":"/newEmplyee.html","btntitle":"تسجيل موظف جديد"},
+                       {"icon":"gca-user-account","title":"طلب تجديد إقامة موظف","link":"/iqamaRenw.html","btntitle":"إنشاء طلب تجديد"},
+                       {"icon":"gca-user-switch","title":"طلب نقل خدمات موظف","link":"/transferEmplyeeExternally.html","btntitle":"إنشاء طلب نقل"},
+                       {"icon":"gca-user-arrow-left-right","title":"طلب نقل موظف إلى مشروع آخر","link":"/transferEmployeeInternally.html","btntitle":"إنشاء طلب نقل"},
+                       {"icon":"gca-user-remove-01","title":"طلب إنهاء خدمات موظف","link":"/employeeTermination.html","btntitle":"إنشاء طلب إنهاء"},
+                       {"icon":"gca-invoice","title":"مسيرات الرواتب","link":"/payroll.html","btntitle":"عرض جميع المسيرات"}
+      ]'>
+    </hr-requests>
   </div>
 
   <!-- Footer Begin -->
-  <div class="container-fluid fixed-bottom bg-success px-5 py-5 mt-5">
+  <div class="flex-1"></div>
+  <div class="container-fluid bg-success px-5 py-5 mt-5">
     <div
       class="row row row-cols-1 row-cols-md-2 gy-4 gy-md-7 d-flex justify-content-between justify-content-md-center align-items-center">
       <div class="col">

@@ -88,28 +88,9 @@ html {
   box-sizing: inherit;
 }
 
-/****** Cutom Style Start ********/
-
-.breadcrumb-bg {
-  background-image: url(../img/breadcrumb-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f9fafb;
-  padding: 32px;
-  margin: 0 !important;
-}
-
-.carousel-item p {
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-}
-
-.header svg {
-  fill: #161616;
-}
+/***********************************
+ DGA Custom Style
+************************************/
 
 .header .nav-link::after {
   position: absolute;
@@ -177,6 +158,29 @@ html {
 }
 .social-links:hover::after {
   display: none;
+}
+
+/***********************************
+ Custom Style
+************************************/
+
+.breadcrumb-bg {
+  background-image: url(../img/breadcrumb-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f9fafb;
+  padding: 32px;
+  margin: 0 !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.flex-1 {
+  flex: 1 1 auto;
 }
 
 /****** Cutom Style End ********/
